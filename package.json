@@ -1,0 +1,27 @@
+{
+	"name": "brpkg",
+    "version": "0.1.0",
+    "description": "inlines required package.json",
+    "author": "Glen Huang <curvedmark@gmail.com>",
+    "keywords": [
+        "browserify",
+        "package.json",
+        "require",
+        "plugin",
+        "static",
+        "asset",
+        "bundle"
+    ],
+	"dependencies": {
+        "through": "~2.2.0",
+        "falafel": "~0.1.6",
+        "escodegen": "0.0.17"
+    },
+	"devDependencies": {
+        "tap": "~0.4.0",
+        "browserify": "~2.3.1"
+    },
+	"scripts": {
+        "test": "tap test/*.js"
+    }
+}
