@@ -38,7 +38,7 @@ function transform(data, file, tr) {
 		var arg = gen(node.arguments[0]);
 		var reqPath = Function(vars, 'return ' + arg)(file, dirname);
 
-		reqPath = path.resolve(dirname, reqPath);
+		reqPath = path.resolve(dirname, reqPath || '');
 		if (!/\/package\.json$/.test(reqPath)) return;
 
 		while (node.parent.type === 'MemberExpression') node = node.parent;
